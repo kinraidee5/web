@@ -1,0 +1,29 @@
+<html>
+<style>
+        body{
+            background-image : url("https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-chinese-style-ink-landscape-background-styleretrolandscape-backgroundtraditionalliterarygeneral-backgroundinvited-image_81174.jpg");
+            background-size: 1720px 890px;
+        }
+</style>
+
+<body align = "center">
+    
+	<font size = "+4" face = "WR Tish Kid">Hi everyone this is my little website that make for introduce myself.<br>
+    I hope that you gonna know me more. <br>
+    Do you know that what time for now?<br>
+    Now is ...
+
+<p id="time"></p>
+
+<script>
+        var timeDisplay = document.getElementById("time");
+        function refreshTime() {
+            d = new Date();
+            date = ("0" + d.getDate()).slice(-2) + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + d.getFullYear() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2);
+            timeDisplay.innerHTML = date;
+        }
+        setInterval(refreshTime, 1000);
+</script>
+</font>
+</body>
+</html>
